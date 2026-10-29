@@ -1,6 +1,6 @@
-# Robustness & Interpretability of Vision Foundation Models
+﻿# Robustness & Interpretability of Vision Foundation Models
 
-**Research artifact from the IASc–INSA–NASI Summer Research Fellowship Programme 2025**
+**Research artifact from the IAScâ€“INSAâ€“NASI Summer Research Fellowship Programme 2025**
 **Machine Intelligence Unit, Indian Statistical Institute, Kolkata**
 
 A reproducible experimental study of **robustness, interpretability, and model behaviour under distribution shift** across convolutional and transformer-based vision architectures.
@@ -42,7 +42,7 @@ The broader goal is not only to compare predictive accuracy, but to examine how 
 
 ## Research Context
 
-This work was conducted during the **IASc–INSA–NASI Summer Research Fellowship Programme 2025** at the **Indian Statistical Institute, Kolkata**.
+This work was conducted during the **IAScâ€“INSAâ€“NASI Summer Research Fellowship Programme 2025** at the **Indian Statistical Institute, Kolkata**.
 
 ### Research supervision
 
@@ -58,7 +58,7 @@ The complete fellowship report is included in:
 
 ```text
 survey-report/
-└── SRFP-Suha_Robustness_Interpretebility_VFM.pdf
+â””â”€â”€ SRFP-Suha_Robustness_Interpretebility_VFM.pdf
 ```
 
 ---
@@ -67,36 +67,36 @@ survey-report/
 
 ```text
 Dataset
-   │
-   ▼
+   â”‚
+   â–¼
 Model / architecture
-   │
-   ├── ResNet
-   ├── ViT
-   └── Swin Transformer
-   │
-   ▼
+   â”‚
+   â”œâ”€â”€ ResNet
+   â”œâ”€â”€ ViT
+   â””â”€â”€ Swin Transformer
+   â”‚
+   â–¼
 Baseline evaluation
-   │
-   ▼
+   â”‚
+   â–¼
 Distribution shift / perturbation
-   │
-   ├── flip
-   ├── rotation
-   ├── blur
-   ├── brightness
-   └── Gaussian noise
-   │
-   ▼
+   â”‚
+   â”œâ”€â”€ flip
+   â”œâ”€â”€ rotation
+   â”œâ”€â”€ blur
+   â”œâ”€â”€ brightness
+   â””â”€â”€ Gaussian noise
+   â”‚
+   â–¼
 Robustness evaluation
-   │
-   ▼
+   â”‚
+   â–¼
 Explanation generation
-   │
-   ├── CAM-based methods
-   └── transformer attention / attribution
-   │
-   ▼
+   â”‚
+   â”œâ”€â”€ CAM-based methods
+   â””â”€â”€ transformer attention / attribution
+   â”‚
+   â–¼
 Comparative analysis
 ```
 
@@ -188,8 +188,8 @@ Dataset download utilities are provided in:
 
 ```text
 scripts/
-├── download_data.ps1
-└── download_data.sh
+â”œâ”€â”€ download_data.ps1
+â””â”€â”€ download_data.sh
 ```
 
 ---
@@ -227,39 +227,39 @@ The script creates the local `models/` directory automatically.
 
 ```text
 .
-├── data/
-│   └── README.md
-│
-├── notebooks/
-│   ├── cifar-10-resnet-vit.ipynb
-│   ├── cifar-10-swin.ipynb
-│   ├── fashionmnist-resnet-vit.ipynb
-│   ├── fashionmnist-swin.ipynb
-│   ├── imagenet-100-robustness+explainability.ipynb
-│   ├── imagenet-v2-robustness+explainability.ipynb
-│   ├── tiny-imagenet-robustness+explainability.ipynb
-│   │
-│   ├── gcam-voc-wsss-baseline-v1.ipynb
-│   ├── gcam_voc-wsss-a-rotate.ipynb
-│   ├── gcam_voc-wsss-b-diceloss.ipynb
-│   ├── gcam_voc-wsss-c-dilate3.ipynb
-│   ├── gcam_voc-wsss-d-dilate5.ipynb
-│   ├── gcam-voc-wsss-e-erode3.ipynb
-│   └── voc-wsss-vitroll-all-exp.ipynb
-│
-├── scripts/
-│   ├── download_data.ps1
-│   ├── download_data.sh
-│   └── download_models_hf.py
-│
-├── survey-report/
-│   └── SRFP-Suha_Robustness_Interpretebility_VFM.pdf
-│
-├── .gitignore
-├── CITATION.cff
-├── LICENSE
-├── README.md
-└── requirements.txt
+â”œâ”€â”€ data/
+â”‚   â””â”€â”€ README.md
+â”‚
+â”œâ”€â”€ notebooks/
+â”‚   â”œâ”€â”€ cifar-10-resnet-vit.ipynb
+â”‚   â”œâ”€â”€ cifar-10-swin.ipynb
+â”‚   â”œâ”€â”€ fashionmnist-resnet-vit.ipynb
+â”‚   â”œâ”€â”€ fashionmnist-swin.ipynb
+â”‚   â”œâ”€â”€ imagenet-100-robustness+explainability.ipynb
+â”‚   â”œâ”€â”€ imagenet-v2-robustness+explainability.ipynb
+â”‚   â”œâ”€â”€ tiny-imagenet-robustness+explainability.ipynb
+â”‚   â”‚
+â”‚   â”œâ”€â”€ gcam-voc-wsss-baseline-v1.ipynb
+â”‚   â”œâ”€â”€ gcam_voc-wsss-a-rotate.ipynb
+â”‚   â”œâ”€â”€ gcam_voc-wsss-b-diceloss.ipynb
+â”‚   â”œâ”€â”€ gcam_voc-wsss-c-dilate3.ipynb
+â”‚   â”œâ”€â”€ gcam_voc-wsss-d-dilate5.ipynb
+â”‚   â”œâ”€â”€ gcam-voc-wsss-e-erode3.ipynb
+â”‚   â””â”€â”€ voc-wsss-vitroll-all-exp.ipynb
+â”‚
+â”œâ”€â”€ scripts/
+â”‚   â”œâ”€â”€ download_data.ps1
+â”‚   â”œâ”€â”€ download_data.sh
+â”‚   â””â”€â”€ download_models_hf.py
+â”‚
+â”œâ”€â”€ survey-report/
+â”‚   â””â”€â”€ SRFP-Suha_Robustness_Interpretebility_VFM.pdf
+â”‚
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ CITATION.cff
+â”œâ”€â”€ LICENSE
+â”œâ”€â”€ README.md
+â””â”€â”€ requirements.txt
 ```
 
 ---
@@ -335,8 +335,8 @@ The experimental context matters.
 Clone the repository:
 
 ```powershell
-git clone https://github.com/suharoy/Robustness-Interpretebility-VFM-Survey.git
-cd Robustness-Interpretebility-VFM-Survey
+git clone https://github.com/suharoy/vfm-robustness-interpretability.git
+cd vfm-robustness-interpretability
 ```
 
 Create an isolated environment:
@@ -425,7 +425,7 @@ Some notebooks were originally developed in notebook-based research environments
 
 The full fellowship report is available directly in this repository:
 
-[**SRFP Report — Robustness & Interpretability of Vision Foundation Models**](survey-report/SRFP-Suha_Robustness_Interpretebility_VFM.pdf)
+[**SRFP Report â€” Robustness & Interpretability of Vision Foundation Models**](survey-report/SRFP-Suha_Robustness_Interpretebility_VFM.pdf)
 
 The report provides the broader research motivation, literature context and experimental discussion accompanying the repository.
 
@@ -486,7 +486,7 @@ If you use this repository or the released model weights in academic work, pleas
   title        = {Robustness and Interpretability of Vision Foundation Models under Distributional Shifts},
   year         = {2025},
   howpublished = {GitHub repository},
-  url          = {https://github.com/suharoy/Robustness-Interpretebility-VFM-Survey},
+  url          = {https://github.com/suharoy/vfm-robustness-interpretability},
   note         = {Research conducted during the IASc-INSA-NASI Summer Research Fellowship Programme 2025 at the Indian Statistical Institute, Kolkata}
 }
 ```
@@ -497,14 +497,14 @@ A machine-readable citation is also provided in `CITATION.cff`.
 
 ## Acknowledgements
 
-This work was carried out as part of the **IASc–INSA–NASI Summer Research Fellowship Programme 2025**.
+This work was carried out as part of the **IAScâ€“INSAâ€“NASI Summer Research Fellowship Programme 2025**.
 
 I gratefully acknowledge:
 
 * **Prof. Sanghamitra Bandyopadhyay**, Machine Intelligence Unit, Indian Statistical Institute, Kolkata
 * **Dr. Malay Bhattacharyya**, Machine Intelligence Unit, Indian Statistical Institute, Kolkata
 * **Indian Statistical Institute, Kolkata**
-* **IASc–INSA–NASI Summer Research Fellowship Programme**
+* **IAScâ€“INSAâ€“NASI Summer Research Fellowship Programme**
 
 ---
 
@@ -520,9 +520,11 @@ Datasets, pretrained models, research libraries and other third-party resources 
 
 **Suha Roy**
 
-M.Sc. Computer Science — Big Data Analytics
+M.Sc. Computer Science â€” Big Data Analytics
 Central University of Rajasthan
 
 **GitHub:** https://github.com/suharoy
 **Hugging Face:** https://huggingface.co/suharoy
 **LinkedIn:** https://linkedin.com/in/suharoy
+
+

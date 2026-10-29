@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this repository or its released model weights, please cite this work."
 title: "Robustness and Interpretability of Vision Foundation Models under Distributional Shifts"
 type: software
@@ -7,8 +7,8 @@ authors:
     given-names: "Suha"
 year: 2025
 license: MIT
-repository-code: "https://github.com/suharoy/Robustness-Interpretebility-VFM-Survey"
-url: "https://github.com/suharoy/Robustness-Interpretebility-VFM-Survey"
+repository-code: "https://github.com/suharoy/vfm-robustness-interpretability"
+url: "https://github.com/suharoy/vfm-robustness-interpretability"
 keywords:
   - computer vision
   - vision transformers
